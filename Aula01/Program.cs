@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
-public class Program{
+public class Program {
 
    public static void Main(){
 
@@ -51,14 +51,19 @@ public class Program{
    // }
 
 // switch
-   int var 2;
+   int var = 2;
    switch (var)
    {
       case 3: 
          System.Console.WriteLine("3");
          break;
       default:
-         
+         System.Console.WriteLine("Nada");
+         break;
+
    }
 
+
+
+   }
 }
