@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Hermann\\Aula01\\Aula01.csproj",
+      "projectUniqueName": "C:\\Hermann\\csharp-capacitacao-engenharia\\Aula01\\Aula01.csproj",
       "projectName": "Aula01",
-      "projectPath": "c:\\Hermann\\Aula01\\Aula01.csproj",
+      "projectPath": "C:\\Hermann\\csharp-capacitacao-engenharia\\Aula01\\Aula01.csproj",
       "packagesPath": "C:\\Users\\LABEST\\.nuget\\packages\\",
-      "outputPath": "c:\\Hermann\\Aula01\\obj\\",
+      "outputPath": "C:\\Hermann\\csharp-capacitacao-engenharia\\Aula01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LABEST\\AppData\\Roaming\\NuGet\\NuGet.Config"
