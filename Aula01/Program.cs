@@ -1,45 +1,85 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
+using Aula01;
+
 public class Program {
 
    public static void Main(){
 
-      System.Console.WriteLine("Informe seu nome:");
-      string? nome = Console.ReadLine();
-      System.Console.WriteLine("Você digitou: " + nome);
+/* Orientação a Objetos */
+/* Exemplo conta bancária - Encapsulamento */
 
-      System.Console.WriteLine("Informe a sua idade:");
-      int idade = Convert.ToInt32(Console.ReadLine());
-      System.Console.WriteLine("Sua idade: " + idade);
+      Conta conta = new Conta();
+      // conta.saldo = 100; // Valor protected
+      System.Console.WriteLine($"Saldo: {conta.saldo}");
+      conta.deposita(120);
+      System.Console.WriteLine($"Saldo: {conta.saldo}");
+      conta.saca(60);
+      System.Console.WriteLine($"Saldo: {conta.saldo}");
 
-      System.Console.WriteLine("Informe a sua altura:");
-      double altura = Convert.ToDouble(Console.ReadLine());
+/* Exemplo pista - Herança*/
 
-      System.Console.WriteLine("Informe o seu peso:");
-      double peso = Convert.ToDouble(Console.ReadLine());
+      // Pista pista = new Pista();
+      // pista.id = 1;
+      // pista.clima = "Chuva";
 
-      calculaIMC(altura, peso);
+      // Treino treino = new Treino();
+      // treino.id = 2;
+      // treino.clima = "Sol";
+      // treino.barreiras = 4;
 
-      void calculaIMC(double altura, double peso){
-         double resultado = peso / (altura * altura);
-         System.Console.WriteLine("Resultado do calculo IMC: " + resultado);
-         if (resultado < 18.5) {
-            System.Console.WriteLine("Abaixo do peso.");
-         } else if (resultado >= 18.5 && resultado <= 24.9) {
-            System.Console.WriteLine("Peso normal.");
-         } else if (resultado >= 25.0 && resultado <= 29.9) {
-            System.Console.WriteLine("Pré-obesidade.");
-         } else if (resultado >= 30.0 && resultado <= 34.9) {
-            System.Console.WriteLine("Obesidade grau 1.");
-         } else if (resultado >= 35.0 && resultado <= 39.9) {
-            System.Console.WriteLine("Obesidade grau 2.");            
-         } else if (resultado > 40) {
-            System.Console.WriteLine("Obesidade grau 3.");
-         }
-      }
+// /* Exemplo Carro */
+//       Carro carro = new Carro();
+//       carro.id = 1;
+//       carro.nome = "BMW";
+//       carro.veloxMax = 300;
+
+//       System.Console.WriteLine($"Id:{carro.id} Nome: {carro.nome} Velocidade:{carro.veloxMax}");
+//       carro.alterar(350); // Alterando a velocidade
+//       System.Console.WriteLine($"Id:{carro.id} Nome: {carro.nome} Velocidade:{carro.veloxMax}");
+
+      // Carro carro2 = new Carro();
+      // carro2.id = 2;
+      // carro2.nome = "Ford";
+      // carro2.veloxMax = 230;
+
+      // System.Console.WriteLine($"Id:{carro2.id} Nome: {carro2.nome} Velocidade:{carro2.veloxMax}");
 
 
+/* Desafio IMC */
+      // System.Console.WriteLine("Informe seu nome:");
+      // string? nome = Console.ReadLine();
+      // System.Console.WriteLine("Você digitou: " + nome);
 
+      // System.Console.WriteLine("Informe a sua idade:");
+      // int idade = Convert.ToInt32(Console.ReadLine());
+      // System.Console.WriteLine("Sua idade: " + idade);
+
+      // System.Console.WriteLine("Informe a sua altura:");
+      // double altura = Convert.ToDouble(Console.ReadLine());
+
+      // System.Console.WriteLine("Informe o seu peso:");
+      // double peso = Convert.ToDouble(Console.ReadLine());
+
+      // calculaIMC(altura, peso);
+
+      // void calculaIMC(double altura, double peso){
+      //    double resultado = peso / (altura * altura);
+      //    System.Console.WriteLine("Resultado do calculo IMC: " + resultado);
+      //    if (resultado < 18.5) {
+      //       System.Console.WriteLine("Abaixo do peso.");
+      //    } else if (resultado >= 18.5 && resultado <= 24.9) {
+      //       System.Console.WriteLine("Peso normal.");
+      //    } else if (resultado >= 25.0 && resultado <= 29.9) {
+      //       System.Console.WriteLine("Pré-obesidade.");
+      //    } else if (resultado >= 30.0 && resultado <= 34.9) {
+      //       System.Console.WriteLine("Obesidade grau 1.");
+      //    } else if (resultado >= 35.0 && resultado <= 39.9) {
+      //       System.Console.WriteLine("Obesidade grau 2.");            
+      //    } else if (resultado > 40) {
+      //       System.Console.WriteLine("Obesidade grau 3.");
+      //    }
+      // }
 
 
       // int numero = 1;
