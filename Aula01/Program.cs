@@ -6,18 +6,33 @@ public class Program {
 
    public static void Main(){
 
-/* Orientação a Objetos */
-/* Exemplo conta bancária - Encapsulamento */
+      /* Orientação a Objetos */
 
-      Conta conta = new Conta();
-      // conta.saldo = 100; // Valor protected
-      System.Console.WriteLine($"Saldo: {conta.saldo}");
-      conta.deposita(120);
-      System.Console.WriteLine($"Saldo: {conta.saldo}");
-      conta.saca(60);
-      System.Console.WriteLine($"Saldo: {conta.saldo}");
+/* Interfaces */
 
-/* Exemplo pista - Herança*/
+      Calculadora calculadora = new Calculadora();
+      System.Console.WriteLine("Soma ->" + calculadora.soma(10, 5));
+      System.Console.WriteLine("Soma ->" + calculadora.soma(10, 5, 6));
+
+      /* Polimorfismo */
+
+      // Conta conta = new Conta();
+      // conta.deposita(50.00);
+      // conta.saca(10.90, 2);
+      // conta.saca(7.50);
+
+
+      // /* Exemplo conta bancária - Encapsulamento */
+
+      //       Conta conta = new Conta();
+      //       // conta.saldo = 100; // Valor protected
+      //       System.Console.WriteLine($"Saldo: {conta.saldo}");
+      //       conta.deposita(120);
+      //       System.Console.WriteLine($"Saldo: {conta.saldo}");
+      //       conta.saca(60);
+      //       System.Console.WriteLine($"Saldo: {conta.saldo}");
+
+      /* Exemplo pista - Herança*/
 
       // Pista pista = new Pista();
       // pista.id = 1;
@@ -28,15 +43,15 @@ public class Program {
       // treino.clima = "Sol";
       // treino.barreiras = 4;
 
-// /* Exemplo Carro */
-//       Carro carro = new Carro();
-//       carro.id = 1;
-//       carro.nome = "BMW";
-//       carro.veloxMax = 300;
+      // /* Exemplo Carro */
+      //       Carro carro = new Carro();
+      //       carro.id = 1;
+      //       carro.nome = "BMW";
+      //       carro.veloxMax = 300;
 
-//       System.Console.WriteLine($"Id:{carro.id} Nome: {carro.nome} Velocidade:{carro.veloxMax}");
-//       carro.alterar(350); // Alterando a velocidade
-//       System.Console.WriteLine($"Id:{carro.id} Nome: {carro.nome} Velocidade:{carro.veloxMax}");
+      //       System.Console.WriteLine($"Id:{carro.id} Nome: {carro.nome} Velocidade:{carro.veloxMax}");
+      //       carro.alterar(350); // Alterando a velocidade
+      //       System.Console.WriteLine($"Id:{carro.id} Nome: {carro.nome} Velocidade:{carro.veloxMax}");
 
       // Carro carro2 = new Carro();
       // carro2.id = 2;
@@ -46,7 +61,7 @@ public class Program {
       // System.Console.WriteLine($"Id:{carro2.id} Nome: {carro2.nome} Velocidade:{carro2.veloxMax}");
 
 
-/* Desafio IMC */
+      /* Desafio IMC */
       // System.Console.WriteLine("Informe seu nome:");
       // string? nome = Console.ReadLine();
       // System.Console.WriteLine("Você digitou: " + nome);
@@ -87,7 +102,7 @@ public class Program {
       // int retorno;
       // System.Console.WriteLine(retorno);
 
-/* if else */ 
+      /* if else */
 
       // if (numero == 10) {
       //    retorno = alterar(numero);
@@ -96,7 +111,7 @@ public class Program {
       // }
       // System.Console.WriteLine(retorno);
 
-/* while */ 
+      /* while */
 
       // retorno = alterar(numero);
 
@@ -117,29 +132,29 @@ public class Program {
       // }
 
 
-/* vetor de string */ 
-   //    string [] nomes = new string[]{"Peter", "Clark", "Jason"};
-   //    foreach (string nome in nomes){
-   //       System.Console.WriteLine(nome);
-   //       if (nome == nomes[0]) { 
-   //          break; 
-   //       }
-   //    }
+      /* vetor de string */
+      //    string [] nomes = new string[]{"Peter", "Clark", "Jason"};
+      //    foreach (string nome in nomes){
+      //       System.Console.WriteLine(nome);
+      //       if (nome == nomes[0]) { 
+      //          break; 
+      //       }
+      //    }
 
-   // }
+      // }
 
-/* switch */ 
-   // int var = 2;
-   // switch (var)
-   // {
-   //    case 3: 
-   //       System.Console.WriteLine("3");
-   //       break;
-   //    default:
-   //       System.Console.WriteLine("Nada");
-   //       break;
+      /* switch */
+      // int var = 2;
+      // switch (var)
+      // {
+      //    case 3: 
+      //       System.Console.WriteLine("3");
+      //       break;
+      //    default:
+      //       System.Console.WriteLine("Nada");
+      //       break;
 
-   // }
+      // }
 
    }
 }
