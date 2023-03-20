@@ -2,13 +2,15 @@
 // Console.WriteLine("Hello, World!");
 using Aula01;
 
-public class Program {
+public class Program
+{
 
-   public static void Main(){
+   public static void Main()
+   {
 
       /* Orientação a Objetos */
 
-/* Interfaces */
+      /* Interfaces */
 
       Calculadora calculadora = new Calculadora();
       System.Console.WriteLine("Soma ->" + calculadora.soma(10, 5));
@@ -22,7 +24,7 @@ public class Program {
       // conta.saca(7.50);
 
 
-      // /* Exemplo conta bancária - Encapsulamento */
+       /* Exemplo conta bancária - Encapsulamento */
 
       //       Conta conta = new Conta();
       //       // conta.saldo = 100; // Valor protected
@@ -43,7 +45,7 @@ public class Program {
       // treino.clima = "Sol";
       // treino.barreiras = 4;
 
-      // /* Exemplo Carro */
+      /* Exemplo Carro */
       //       Carro carro = new Carro();
       //       carro.id = 1;
       //       carro.nome = "BMW";
@@ -133,6 +135,7 @@ public class Program {
 
 
       /* vetor de string */
+
       //    string [] nomes = new string[]{"Peter", "Clark", "Jason"};
       //    foreach (string nome in nomes){
       //       System.Console.WriteLine(nome);
@@ -144,6 +147,7 @@ public class Program {
       // }
 
       /* switch */
+      
       // int var = 2;
       // switch (var)
       // {
