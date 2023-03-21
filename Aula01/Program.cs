@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
 using Aula01;
+using Aula01.files;
 
 public class Program
 {
@@ -8,13 +9,43 @@ public class Program
    public static void Main()
    {
 
+      /* Manipulação de arquivos */
+
+      var caminho = "C:/Hermann/Pasta-teste";
+      FileHelper helper = new FileHelper(caminho);
+      helper.ListarDiretorios(caminho);
+      helper.ListarArquivosDiretorios(caminho);
+
+      var caminhoPathCombine = Path.Combine(caminho, "Teste de Pasta");
+
+      // helper.CriarDiretorio(caminhoPathCombine);
+      // helper.ApagarDiretorio(caminhoPathCombine, true);
+
+      // var caminhoArquivo = Path.Combine(caminho, "arquivo-teste.txt");
+      // helper.CriarArquivoTexto(caminhoArquivo, "Olá! Teste de escrita de arquivo");
+
+      // // Linhas para serem escritas no arquivo
+      // var listaString = new List<string> { "Linha 1", "Linha 2", "Linha 3" };
+      // var caminhoArquivo2 = Path.Combine(caminho, "arquivo-teste-stream2.txt");
+      // helper.CriarArquivoTextoStream(caminhoArquivo2, listaString);
+
+      // var listaStringContinuacao = new List<string> { "Linha 4", "Linha 5", "Linha 6" };
+      // helper.AdicionarTextoStream(caminhoArquivo2, listaStringContinuacao);
+
+      // var caminhoArquivoLeitura = Path.Combine(caminho, "arquivo-teste.txt");
+      // //helper.LerArquivoStream(caminhoArquivoLeitura);
+
+      // helper.DeletarArquivo(caminhoArquivoLeitura);
+
+
+
       /* Orientação a Objetos */
 
       /* Interfaces */
 
-      Calculadora calculadora = new Calculadora();
-      System.Console.WriteLine("Soma ->" + calculadora.soma(10, 5));
-      System.Console.WriteLine("Soma ->" + calculadora.soma(10, 5, 6));
+      // Calculadora calculadora = new Calculadora();
+      // System.Console.WriteLine("Soma ->" + calculadora.soma(10, 5));
+      // System.Console.WriteLine("Soma ->" + calculadora.soma(10, 5, 6));
 
       /* Polimorfismo */
 
@@ -24,7 +55,7 @@ public class Program
       // conta.saca(7.50);
 
 
-       /* Exemplo conta bancária - Encapsulamento */
+      /* Exemplo conta bancária - Encapsulamento */
 
       //       Conta conta = new Conta();
       //       // conta.saldo = 100; // Valor protected
@@ -147,7 +178,7 @@ public class Program
       // }
 
       /* switch */
-      
+
       // int var = 2;
       // switch (var)
       // {
